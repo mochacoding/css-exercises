@@ -1,27 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-  height: 100vh;
-  margin: 0;
-  overflow: hidden;
-  font-family: Roboto, sans-serif;
+	height: 100vh;
+	margin: 0;
+	overflow: hidden;
+	font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
-  width: 600px;
+	width: 600px;
 }
 
 button {
-  font-family: Roboto, sans-serif;
-  border: none;
-  border-radius: 8px;
-  background: #eee;
+	font-family: Roboto, sans-serif;
+	border: none;
+	border-radius: 8px;
+	background: #eee;
 }
 
 input {
-  border: 1px solid #ddd;
-  border-radius: 16px;
-  padding: 8px 24px;
-  width: 400px;
-  margin-bottom: 16px;
+	border: 1px solid #ddd;
+	border-radius: 16px;
+	padding: 8px 24px;
+	width: 400px;
+	margin-bottom: 16px;
 }
+
+                          /*SOLUTION IDEAS*/
+
+/* TOP STUFF */
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 10px 0px 10px;
+}
+
+.left-links,
+.right-links {
+	display: flex;
+	gap: 20px;
+	list-style: none;
+	/* padding-right: 10px; */
+}
+
+.left-links {
+	/* padding-left: 20px; */
+}
+
+/* BULK STUFF  */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  /* position: absolute;  */
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 150px; */
+  flex-grow: 1;
+}
+
+.footer {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0px 10px 0px 10px;
+  background-color: #eeeeee;
+
+  /* margin-top: auto; */
+}
+
+ul {
+  padding: 0;
+}
+
+a:link {
+  color:#7b7979;
+  text-decoration: none;
+}
+
+.footer .left-links {
+ 
+}
+.footer .right-links {
+  
+}
+
+
+
+/* QUESTIONS FOR MIKE
+
+- My 'About' link has a built in padding on the left. I adjusted it by adjusting the padding differently. But is there an explanation? Is it beause of the divs? 
+- Why the frick did setting my whole body, the whole content, to display: flex; and flex-direction: column; not only work, but not mess everything up. It looks exactly like it did before but with the footer at the very bottom. Display: flex; by itself it was horrendous. 
